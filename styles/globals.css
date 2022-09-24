@@ -28,3 +28,35 @@ a {
     background: black;
   }
 }
+
+
+
+
+
+.flickity-viewport {
+  height: 200px !important;
+}
+@media only screen and (min-width: 640px) {
+  .flickity-viewport {
+    height: 300px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .flickity-viewport {
+    height: 450px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .flickity-viewport {
+    height: 600px !important;
+  }
+}
+.slide{
+  height: 100%;
+  width: 100%;
+}
+
+.flickity-viewport img {
+  display: block;
+  max-height: 100%;
+}
