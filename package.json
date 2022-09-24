@@ -11,9 +11,11 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@heroicons/react": "v1",
+    "flickity": "2.3.0",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-flickity-component": "^3.6.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.11",
