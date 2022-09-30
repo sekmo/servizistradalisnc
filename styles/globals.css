@@ -10,6 +10,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -48,9 +52,16 @@ a {
 }
 @media only screen and (min-width: 1024px) {
   .flickity-viewport {
-    height: 600px !important;
+    height: 550px !important;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .flickity-viewport {
+    height: 700px !important;
+  }
+}
+
+
 .slide{
   height: 100%;
   width: 100%;
