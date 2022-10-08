@@ -83,7 +83,7 @@ export default function Example() {
         <div className="slide bg-black"><img src="/slider-home/neve.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
       </Flickity>
 
-      <div className="my-4">
+      <div className="mt-4">
         <main>
           <section id="azienda" className="px-4 py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div className="text-lg max-w-prose mx-auto">
@@ -139,25 +139,95 @@ export default function Example() {
           </section>
 
           <section className="px-4 py-8 max-w-7xl mx-auto sm:px-6 lg:px-8 text-lg" id="realizzazioni">
-                <h1>
-                  <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Realizzazioni
+            <h1>
+              <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Realizzazioni
+              </span>
+            </h1>
+            <div className="mt-10 grid gap-y-10 gap-x-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"> 
+              {realizzazioni.map((picture) => (
+                <div key={picture.id} className="group relative">
+                  <div className="aspect-[4/3] rounded-md overflow-hidden">
+                    <img
+                      src={picture.src}
+                      className="w-full h-full object-center object-cover"
+                    />
+                  </div>
+                  <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none">{picture.name}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div className="bg-gray-800 text-white">
+            <div className="max-w-xl sm:max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:pb-10 lg:px-8">
+              <section className="divide-y-2 divide-gray-200" id="contatti">
+                <div className="lg:grid lg:grid-cols-3 lg:gap-8">
+                  <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                    Contatti
                   </span>
-                </h1>
-                <div className="mt-10 grid gap-y-10 gap-x-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"> 
-                  {realizzazioni.map((picture) => (
-                    <div key={picture.id} className="group relative">
-                      <div className="aspect-[4/3] rounded-md overflow-hidden">
-                        <img
-                          src={picture.src}
-                          className="w-full h-full object-center object-cover"
-                        />
-                      </div>
-                      <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none">{picture.name}</p>
+
+
+                  {/* <h2 className="text-2xl font-extrabold text-white sm:text-3xl">Contatti</h2> */}
+                  <div className="mx-auto max-w-sm mt-12 grid xs:grid-cols-2 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
+                    <div className="text-center sm:text-left">
+                      <h3 className="text-lg leading-6 font-medium">Valentina</h3>
+                      <dl className="mt-2 text-base text-gray-400">
+                        <div>
+                          <dt className="sr-only">Email</dt>
+                          <dd>email@gmail.com</dd>
+                        </div>
+                        <div className="mt-1">
+                          <dt className="sr-only">Telefono</dt>
+                          <dd>+39 0733 12345678</dd>
+                        </div>
+                      </dl>
                     </div>
-                  ))}
+                    <div className="text-center sm:text-left">
+                      <h3 className="text-lg leading-6 font-medium">Alessandro</h3>
+                      <dl className="mt-2 text-base text-gray-400">
+                        <div>
+                          <dt className="sr-only">Email</dt>
+                          <dd>email@gmail.com</dd>
+                        </div>
+                        <div className="mt-1">
+                          <dt className="sr-only">Telefono</dt>
+                          <dd>+39 0733 12345678</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <div className="text-center sm:text-left">
+                      <h3 className="text-lg leading-6 font-medium">Gegio</h3>
+                      <dl className="mt-2 text-base text-gray-400">
+                        <div>
+                          <dt className="sr-only">Email</dt>
+                          <dd>email@gmail.com</dd>
+                        </div>
+                        <div className="mt-1">
+                          <dt className="sr-only">Telefono</dt>
+                          <dd>+39 0733 12345678</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <div className="text-center sm:text-left">
+                      <h3 className="text-lg leading-6 font-medium">Arnoldo</h3>
+                      <dl className="mt-2 text-base text-gray-400">
+                        <div>
+                          <dt className="sr-only">Email</dt>
+                          <dd>email@gmail.com</dd>
+                        </div>
+                        <div className="mt-1">
+                          <dt className="sr-only">Telefono</dt>
+                          <dd>+39 0733 12345678</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
                 </div>
               </section>
+              <p class="text-xs text-gray-600 mt-16 text-center">Copyright Servizi Stradali SNC 2022</p>
+            </div>
+          </div>
         </main>
       </div>
     </div>
