@@ -22,6 +22,7 @@ const navigation_items = [
   { name: 'Servizi', href: '#servizi', current: false },
   { name: 'Parco Mezzi', href: '#parco-mezzi', current: false },
   { name: 'Realizzazioni', href: '#realizzazioni', current: false },
+  { name: 'Contatti', href: '#contatti', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
