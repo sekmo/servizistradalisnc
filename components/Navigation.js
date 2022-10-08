@@ -10,18 +10,23 @@ export default function Navigation({navigation_items}) {
     <Disclosure as="nav" className="bg-neutral-600 border-b border-lime-300">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16">
-              <div className="flex">
-                <div className="flex-shrink-0 flex items-center">
-                  {/* <Image src="/logo_con_scritta.svg" alt="Servizi Stradali SNC" width={72} height={16} /> */}
+          <div className="max-w-7xl mx-auto mt-0 px-4 sm:px-6 lg:px-8">
+            {/* Logo visible only on desktop */}
+            <img
+              className="hidden sm:block h-12 md:h-16 w-auto mb-3 mx-auto sm:pt-3"
+              src="/logo_con_scritta.svg"
+              alt="Servizi Stradali SNC"
+            />
+            <div className="flex justify-between h-16 lg:mt-5">
+              <div className="flex mx-auto">
+                <div className="flex-shrink-0 flex items-center sm:hidden">
                   <img
                     className="block h-8 sm:h-9 w-auto mb-3"
                     src="/logo_con_scritta.svg"
                     alt="Servizi Stradali SNC"
                   />
                 </div>
-                <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                <div className="hidden sm:-my-px sm:flex sm:space-x-8">
                   {navigation_items.map((item) => (
                     <a
                       key={item.name}
@@ -30,7 +35,7 @@ export default function Navigation({navigation_items}) {
                         item.current
                           ? 'border-lime-300 text-white'
                           : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-400',
-                        'inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'
+                        'inline-flex items-center px-1 pt-1 border-b-2 text-sm md:text-base font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
