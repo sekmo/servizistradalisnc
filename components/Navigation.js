@@ -7,16 +7,17 @@ function classNames(...classes) {
 
 export default function Navigation({navigation_items}) {
   return(
-    <Disclosure as="nav" className="bg-neutral-600 border-b border-lime-300">
+    <Disclosure as="nav" className="bg-neutral-600 border-b border-lime-300 md:pt-2">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto mt-0 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto mt-0 px-4 sm:px-6 lg:px-8 flow-root">
             {/* Logo visible only on desktop */}
             <img
-              className="hidden sm:block h-12 md:h-16 w-auto mb-3 mx-auto sm:pt-3"
+              className="hidden sm:block h-12 sm:h-14 md:h-16 w-auto mb-3 mx-auto sm:mt-3"
               src="/logo_con_scritta.svg"
               alt="Servizi Stradali SNC"
             />
+
             <div className="flex justify-between h-16 lg:mt-5">
               <div className="flex mx-auto">
                 <div className="flex-shrink-0 flex items-center sm:hidden">
