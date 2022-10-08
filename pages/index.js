@@ -74,12 +74,12 @@ export default function Example() {
         reloadOnUpdate // default false
         static // default false
       >
-        <div class="slide bg-black"><img src="/slider-home/1.jpg" class="object-cover min-w-full min-h-full h-full" /></div>
-        <div class="slide bg-black"><img src="/slider-home/2.jpg" class="object-cover min-w-full min-h-full h-full" /></div>
-        <div class="slide bg-black"><img src="/slider-home/3.jpg" class="object-cover min-w-full min-h-full h-full" /></div>
-        <div class="slide bg-black"><img src="/slider-home/4.jpg" class="object-cover min-w-full min-h-full h-full" /></div>
-        <div class="slide bg-black"><img src="/slider-home/5.jpg" class="object-cover min-w-full min-h-full h-full" /></div>
-        <div class="slide bg-black"><img src="/slider-home/neve.jpg" class="object-cover min-w-full min-h-full h-full" /></div>
+        <div className="slide bg-black"><img src="/slider-home/5.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
+        <div className="slide bg-black"><img src="/slider-home/4.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
+        <div className="slide bg-black"><img src="/slider-home/1.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
+        <div className="slide bg-black"><img src="/slider-home/2.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
+        <div className="slide bg-black"><img src="/slider-home/3.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
+        <div className="slide bg-black"><img src="/slider-home/neve.jpg" className="object-cover min-w-full min-h-full h-full" /></div>
       </Flickity>
 
       <div className="my-4">
