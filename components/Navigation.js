@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 export default function Navigation({navigation_items}) {
   return(
-    <Disclosure as="nav" className="bg-emerald-800 border-b border-lime-300">
+    <Disclosure as="nav" className="bg-neutral-600 border-b border-lime-300">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
