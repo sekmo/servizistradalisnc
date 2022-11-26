@@ -180,54 +180,34 @@ export default function Example() {
                   {/* <h2 className="text-2xl font-extrabold text-white sm:text-3xl">Contatti</h2> */}
                   <div className="mx-auto max-w-sm mt-12 grid xs:grid-cols-2 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
                     <div className="text-center sm:text-left">
-                      <h3 className="text-lg leading-6 font-medium">Valentina</h3>
-                      <dl className="mt-2 text-base text-gray-400">
-                        <div>
-                          <dt className="sr-only">Email</dt>
-                          <dd>email@gmail.com</dd>
-                        </div>
-                        <div className="mt-1">
-                          <dt className="sr-only">Telefono</dt>
-                          <dd>+39 0733 12345678</dd>
-                        </div>
-                      </dl>
-                    </div>
-                    <div className="text-center sm:text-left">
                       <h3 className="text-lg leading-6 font-medium">Alessandro</h3>
                       <dl className="mt-2 text-base text-gray-400">
-                        <div>
-                          <dt className="sr-only">Email</dt>
-                          <dd>email@gmail.com</dd>
-                        </div>
                         <div className="mt-1">
                           <dt className="sr-only">Telefono</dt>
-                          <dd>+39 0733 12345678</dd>
+                          <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/alessandro.jpg"/></dd>
                         </div>
                       </dl>
                     </div>
                     <div className="text-center sm:text-left">
-                      <h3 className="text-lg leading-6 font-medium">Gegio</h3>
+                      <h3 className="text-lg leading-6 font-medium">Valentina</h3>
                       <dl className="mt-2 text-base text-gray-400">
-                        <div>
-                          <dt className="sr-only">Email</dt>
-                          <dd>email@gmail.com</dd>
-                        </div>
                         <div className="mt-1">
                           <dt className="sr-only">Telefono</dt>
-                          <dd>+39 0733 12345678</dd>
+                          <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/valentina.jpg"/></dd>
                         </div>
                       </dl>
                     </div>
+
                     <div className="text-center sm:text-left">
-                      <h3 className="text-lg leading-6 font-medium">Arnoldo</h3>
+                      <h3 className="text-lg leading-6 font-medium">Email e PEC</h3>
                       <dl className="mt-2 text-base text-gray-400">
                         <div>
                           <dt className="sr-only">Email</dt>
-                          <dd>email@gmail.com</dd>
+                          <dd>servizi.stradali@gmail.com</dd>
                         </div>
-                        <div className="mt-1">
-                          <dt className="sr-only">Telefono</dt>
-                          <dd>+39 0733 12345678</dd>
+                        <div>
+                          <dt className="sr-only">PEC</dt>
+                          <dd>servizistradali@pec.buffetti.it</dd>
                         </div>
                       </dl>
                     </div>
