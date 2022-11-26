@@ -31,35 +31,43 @@ const userNavigation = [
 ]
 
 const parco_mezzi_gallery = [
-  { name: "Fiat Kobelco 165E", src: "parco-mezzi/1.jpg", description: "" },
-  { name: "Eurocomac 65", src: "parco-mezzi/2.jpg", description: "" },
-  { name: "Hitachi 17", src: "parco-mezzi/3.jpg", description: "" },
-  { name: "Fiat Hitachi FD20", src: "parco-mezzi/4.jpg", description: "" },
-  { name: "Fiat Allis 14C", src: "parco-mezzi/5.jpg", description: "" },
-  { name: "Iveco Euro Trakker 44/440 4 assi", src: "parco-mezzi/6.jpg", description: "" },
-  { name: "Sequani Z 20 E", src: "parco-mezzi/7.jpg", description: "" }
+  { name: "Autocarro 330", src: "parco-mezzi/autocarro-330.jpg", description: "Autocarro 330" },
+  { name: "Cestello PLE PTJ265S", src: "parco-mezzi/cestello-ple-ptj265s.jpg", description: "Cestello PLE PTJ265S" },
+  { name: "Terna Benati", src: "parco-mezzi/terna-benati.jpg", description: "Terna Benati" },
+  { name: "Bob Cat CK30 Komatsu", src: "parco-mezzi/bobcat-ck30-komatsu.jpg", description: "Bob Cat CK30 Komatsu" },
+  { name: "Autocarro con gru DAF 440", src: "parco-mezzi/autocarro-con-gru-daf-440.jpg", description: "Autocarro con gru DAF 440" },
+  { name: "CAT 315F", src: "parco-mezzi/cat-315f.jpg", description: "CAT 315F" },
+  { name: "CAT 323 E", src: "parco-mezzi/cat-323e.jpg", description: "CAT 323 E" },
+  { name: "CAT 308 E", src: "parco-mezzi/cat-308e.jpg", description: "CAT 308 E" },
+  { name: "Cursor Iveco 440", src: "parco-mezzi/cursor-iveco-440.jpg", description: "Cursor Iveco 440" },
+  { name: "Claas Arion 440", src: "parco-mezzi/claas-arion-440.jpg", description: "Claas Arion 440" },
+  { name: "PC 16 R Komatsu", src: "parco-mezzi/pc-16r-komatsu.jpg", description: "PC 16 R Komatsu" },
+  { name: "Komatsu PC 50", src: "parco-mezzi/komatsu-pc50.jpg", description: "Komatsu PC 50" },
+  { name: "Iveco Trakker con gru", src: "parco-mezzi/iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" },
+  { name: "Eurocomac 65", src: "parco-mezzi/2.jpg", description: "Eurocomac 65" },
+  { name: "Hitachi 17", src: "parco-mezzi/3.jpg", description: "Hitachi 17" },
+  { name: "Sequani Z 20 E", src: "parco-mezzi/7.jpg", description: "Sequani Z 20 E" }
 ]
 
 const servizi = [
-  { name: "Manutenzione stradale", src: "parco-mezzi/1.jpg", description: "" },
-  { name: "Movimento terra", src: "parco-mezzi/2.jpg", description: "" },
-  { name: "Sistemazione verde pubblico", src: "parco-mezzi/3.jpg", description: "" },
-  { name: "Lavori edili e stradali c/o terzi", src: "parco-mezzi/4.jpg", description: "" },
-  { name: "Giardinaggio e recinzioni", src: "parco-mezzi/5.jpg", description: "" },
-  { name: "Agricoltura", src: "parco-mezzi/6.jpg", description: "" }
+  { name: "Manutenzioni stradali", src: "servizi/manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
+  { name: "Movimento terra", src: "servizi/movimento-terra.jpg", description: "Movimento terra" },
+  { name: "Sistemazione verde pubblico", src: "parco-mezzi/3.jpg", description: "Sistemazione verde pubblico" },
+  { name: "Lavori edili e stradali c/o terzi", src: "servizi/lavori-edili-e-stradali.jpg", description: "Lavori edili e stradali c/o terzi" },
+  { name: "Giardinaggio e recinzioni", src: "servizi/giardinaggio-e-recinzioni.jpg", description: "Giardinaggio e recinzioni" }
 ]
 
 const realizzazioni = [
-  { name: "Demolizioni", src: "realizzazioni/1.jpg", description: "" },
-  { name: "Manutenzioni stradali", src: "realizzazioni/2.jpg", description: "" },
-  { name: "Pulizia alvei fluviali", src: "realizzazioni/3.jpg", description: "" },
-  { name: "Pulizia attraversamenti", src: "realizzazioni/4.jpg", description: "" },
-  { name: "Pulizia sotto i ponti con cestello in negativo", src: "realizzazioni/5.jpg", description: "" },
-  { name: "Realizzazione di attraversamenti stradali", src: "realizzazioni/6.jpg", description: "" },
-  { name: "Realizzazione di cordoli e zanelle stradali", src: "realizzazioni/7.jpg", description: "" },
-  { name: "Realizzazione di drenaggi", src: "realizzazioni/8.jpg", description: "" },
-  { name: "Realizzazione di fognature", src: "realizzazioni/9.jpg", description: "" },
-  { name: "Realizzazione di gabbionate", src: "realizzazioni/10.jpg", description: "" },
+  { name: "Demolizioni", src: "realizzazioni/demolizioni.jpg", description: "Demolizioni" },
+  { name: "Manutenzioni stradali", src: "realizzazioni/manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
+  { name: "Pulizia alvei fluviali", src: "realizzazioni/pulizia-alvei-fluviali.jpg", description: "Pulizia alvei fluviali" },
+  { name: "Pulizia attraversamenti", src: "realizzazioni/4.jpg", description: "Pulizia attraversamenti" },
+  { name: "Pulizia sotto i ponti con cestello in negativo", src: "realizzazioni/5.jpg", description: "Pulizia sotto i ponti con cestello in negativo" },
+  { name: "Realizzazioni di attraversamenti stradali", src: "realizzazioni/realizzazioni-di-attraversamenti-stradali.jpg", description: "Realizzazioni di attraversamenti stradali" },
+  { name: "Realizzazione di cordoli e zanelle stradali", src: "realizzazioni/7.jpg", description: "Realizzazione di cordoli e zanelle stradali" },
+  { name: "Realizzazione di drenaggi", src: "realizzazioni/8.jpg", description: "Realizzazione di drenaggi" },
+  { name: "Realizzazione di fognature", src: "realizzazioni/9.jpg", description: "Realizzazione di fognature" },
+  { name: "Realizzazione di gabbionate", src: "realizzazioni/10.jpg", description: "Realizzazione di gabbionate" },
 ]
 
 export default function Example() {
@@ -90,9 +98,10 @@ export default function Example() {
               <h1 className="block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Chi siamo
               </h1>
-              <p className="mt-8 text-xl text-gray-500 leading-8">L'azienda Servizi Stradali SNC nasce nel 2005 per venire incontro a qualsiasi esigenza di regolamentazione del traffico tramite i movieri, persone formate ed informate che, a differenza dei semafori, lavorano a vista e di conseguenza ottimizzano la gestione del traffico a seconda delle fasce orarie giornaliere.</p>
-              <p className="mt-8 text-xl text-gray-500 leading-8">Operiamo nelle Marche, Abruzzo, Umbria e in Emilia-Romagna in tutte le strade comunali, provinciali, regionali e statali cercando di soddisfare al meglio le esigenze dei nostri clienti tipici, i terzisti per le imprese stradali.</p>
-              <p className="mt-8 text-xl text-gray-500 leading-8">Ciò non toglie che possiamo lavorare anche per gli Enti pubblici che organizzano grandi Eventi e hanno la necessità di chiudere un tratto stradale momentaneamente, per renderlo pedonale o a senso unico. </p>
+              <p className="mt-8 text-xl text-gray-500 leading-8">L'Azienda <strong>Servizi Stradali di Marinelli Valentina & C. SNC</strong> (in sigla <strong>Servizi Stradali SNC</strong>) è una Società in nome collettivo rappresentata dal Legale Rappresentante / Socia <strong>Marinelli Valentina</strong> e dal Socio / Direttore Tecnico <strong>Di Luca Alessandro</strong>.<br/>La Società ha sede legale in San Ginesio in Via Torre di Morro snc, è stata costituita il 10/01/2008 ed è iscritta presso la Camera di Commercio di Macerata dal 16/01/2008 al R.I. n. 01646020436 e Rea n. MC-169590.</p>
+              <p className="mt-8 text-xl text-gray-500 leading-8">L'attività dell'Impresa è costituita da lavori di movimento terra c/terzi, scavi, sbancamenti, lavori stradali, lavori edili stradali, manutenzione del verde pubblico (taglio erba e potature), attività di sgombro neve e spargimento abrasivi, lavori di manutenzione strade e manutenzioni edili-stradali, attività edilizia privata e pubblica sia di costruzione che di restauro, costruzioni e pavimentazioni stradali, acquedotti, fognature, trivellazione e palificazione, impianti di irrigazione, drenaggi, lavorazioni in alta quota con o senza piattaforma, noleggio a freddo, trasporto e smaltimento rifiuti, bonifica canali, sistemazione ponti, installazione di barriere, demolizione edifici di ogni genere.</p>
+              <p className="mt-8 text-xl text-gray-500 leading-8">La Servizi Stradali SNC ad oggi vanta di svolgere con esperienza ormai decennale lavori appartenenti alle <strong>Categorie OG1 e OG3</strong> che hanno permesso di acquisire le <strong>Certificazioni SOA con classifica II</strong> per entrambe le categorie.</p>
+              <p className="mt-8 text-xl text-gray-500 leading-8">L'Impresa ha svolto e svolge tutt'ora lavori e servizi appartenenti alla <strong>Categoria OS24</strong>, e LAVORI appartenenti alle <strong>Categorie OS1 e OS23.</strong>. Tutte queste tipologie di lavorazioni sono state e sono tutt'oggi commissionate da Enti Pubblici, privati e aziende private. Dal 2021 l'azienda ha iniziato a svolgere <strong>lavori sisma e lavori con sismabonus 110% ed ecobonus</strong> sia direttamente come ditta Appaltatrice sia come ditta subappaltatrice.</p>
             </div>
           </section>
 
