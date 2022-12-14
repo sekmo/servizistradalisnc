@@ -31,43 +31,43 @@ const userNavigation = [
 ]
 
 const parco_mezzi_gallery = [
-  { name: "Autocarro 330", src: "parco-mezzi/autocarro-330.jpg", description: "Autocarro 330" },
-  { name: "Cestello PLE PTJ265S", src: "parco-mezzi/cestello-ple-ptj265s.jpg", description: "Cestello PLE PTJ265S" },
-  { name: "Terna Benati", src: "parco-mezzi/terna-benati.jpg", description: "Terna Benati" },
-  { name: "Bob Cat CK30 Komatsu", src: "parco-mezzi/bobcat-ck30-komatsu.jpg", description: "Bob Cat CK30 Komatsu" },
-  { name: "Autocarro con gru DAF 440", src: "parco-mezzi/autocarro-con-gru-daf-440.jpg", description: "Autocarro con gru DAF 440" },
-  { name: "CAT 315F", src: "parco-mezzi/cat-315f.jpg", description: "CAT 315F" },
-  { name: "CAT 323 E", src: "parco-mezzi/cat-323e.jpg", description: "CAT 323 E" },
-  { name: "CAT 308 E", src: "parco-mezzi/cat-308e.jpg", description: "CAT 308 E" },
-  { name: "Cursor Iveco 440", src: "parco-mezzi/cursor-iveco-440.jpg", description: "Cursor Iveco 440" },
-  { name: "Claas Arion 440", src: "parco-mezzi/claas-arion-440.jpg", description: "Claas Arion 440" },
-  { name: "PC 16 R Komatsu", src: "parco-mezzi/pc-16r-komatsu.jpg", description: "PC 16 R Komatsu" },
-  { name: "Komatsu PC 50", src: "parco-mezzi/komatsu-pc50.jpg", description: "Komatsu PC 50" },
-  { name: "Iveco Trakker con gru", src: "parco-mezzi/iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" },
-  { name: "Eurocomac 65", src: "parco-mezzi/2.jpg", description: "Eurocomac 65" },
-  { name: "Hitachi 17", src: "parco-mezzi/3.jpg", description: "Hitachi 17" },
-  { name: "Sequani Z 20 E", src: "parco-mezzi/7.jpg", description: "Sequani Z 20 E" }
+  { name: "Autocarro 330", src: "autocarro-330.jpg", description: "Autocarro 330" },
+  { name: "Cestello PLE PTJ265S", src: "cestello-ple-ptj265s.jpg", description: "Cestello PLE PTJ265S" },
+  { name: "Terna Benati", src: "terna-benati.jpg", description: "Terna Benati" },
+  { name: "Bob Cat CK30 Komatsu", src: "bobcat-ck30-komatsu.jpg", description: "Bob Cat CK30 Komatsu" },
+  { name: "Autocarro con gru DAF 440", src: "autocarro-con-gru-daf-440.jpg", description: "Autocarro con gru DAF 440" },
+  { name: "CAT 315F", src: "cat-315f.jpg", description: "CAT 315F" },
+  { name: "CAT 323 E", src: "cat-323e.jpg", description: "CAT 323 E" },
+  { name: "CAT 308 E", src: "cat-308e.jpg", description: "CAT 308 E" },
+  { name: "Cursor Iveco 440", src: "cursor-iveco-440.jpg", description: "Cursor Iveco 440" },
+  { name: "Claas Arion 440", src: "claas-arion-440.jpg", description: "Claas Arion 440" },
+  { name: "PC 16 R Komatsu", src: "pc-16r-komatsu.jpg", description: "PC 16 R Komatsu" },
+  { name: "Komatsu PC 50", src: "komatsu-pc50.jpg", description: "Komatsu PC 50" },
+  { name: "Iveco Trakker con gru", src: "iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" },
+  { name: "Eurocomac 65", src: "2.jpg", description: "Eurocomac 65" },
+  { name: "Hitachi 17", src: "3.jpg", description: "Hitachi 17" },
+  { name: "Sequani Z 20 E", src: "7.jpg", description: "Sequani Z 20 E" }
 ]
 
 const servizi = [
-  { name: "Manutenzioni stradali", src: "servizi/manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
-  { name: "Movimento terra", src: "servizi/movimento-terra.jpg", description: "Movimento terra" },
-  { name: "Sistemazione verde pubblico", src: "parco-mezzi/3.jpg", description: "Sistemazione verde pubblico" },
-  { name: "Lavori edili e stradali c/o terzi", src: "servizi/lavori-edili-e-stradali.jpg", description: "Lavori edili e stradali c/o terzi" },
-  { name: "Giardinaggio e recinzioni", src: "servizi/giardinaggio-e-recinzioni.jpg", description: "Giardinaggio e recinzioni" }
+  { name: "Manutenzioni stradali", src: "manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
+  { name: "Movimento terra", src: "movimento-terra.jpg", description: "Movimento terra" },
+  { name: "Sistemazione verde pubblico", src: "sistemazione-verde-pubblico.jpg", description: "Sistemazione verde pubblico" },
+  { name: "Lavori edili e stradali c/o terzi", src: "lavori-edili-e-stradali.jpg", description: "Lavori edili e stradali c/o terzi" },
+  { name: "Giardinaggio e recinzioni", src: "giardinaggio-e-recinzioni.jpg", description: "Giardinaggio e recinzioni" }
 ]
 
 const realizzazioni = [
-  { name: "Demolizioni", src: "realizzazioni/demolizioni.jpg", description: "Demolizioni" },
-  { name: "Manutenzioni stradali", src: "realizzazioni/manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
-  { name: "Pulizia alvei fluviali", src: "realizzazioni/pulizia-alvei-fluviali.jpg", description: "Pulizia alvei fluviali" },
-  { name: "Pulizia attraversamenti", src: "realizzazioni/4.jpg", description: "Pulizia attraversamenti" },
-  { name: "Pulizia sotto i ponti con cestello in negativo", src: "realizzazioni/5.jpg", description: "Pulizia sotto i ponti con cestello in negativo" },
-  { name: "Realizzazioni di attraversamenti stradali", src: "realizzazioni/realizzazioni-di-attraversamenti-stradali.jpg", description: "Realizzazioni di attraversamenti stradali" },
-  { name: "Realizzazione di cordoli e zanelle stradali", src: "realizzazioni/7.jpg", description: "Realizzazione di cordoli e zanelle stradali" },
-  { name: "Realizzazione di drenaggi", src: "realizzazioni/8.jpg", description: "Realizzazione di drenaggi" },
-  { name: "Realizzazione di fognature", src: "realizzazioni/9.jpg", description: "Realizzazione di fognature" },
-  { name: "Realizzazione di gabbionate", src: "realizzazioni/10.jpg", description: "Realizzazione di gabbionate" },
+  { name: "Demolizioni", src: "demolizioni.jpg", description: "Demolizioni" },
+  { name: "Manutenzioni stradali", src: "manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
+  { name: "Pulizia alvei fluviali", src: "pulizia-alvei-fluviali.jpg", description: "Pulizia alvei fluviali" },
+  { name: "Pulizia attraversamenti", src: "4.jpg", description: "Pulizia attraversamenti" },
+  { name: "Pulizia sotto i ponti con cestello in negativo", src: "5.jpg", description: "Pulizia sotto i ponti con cestello in negativo" },
+  { name: "Realizzazioni di attraversamenti stradali", src: "realizzazioni-di-attraversamenti-stradali.jpg", description: "Realizzazioni di attraversamenti stradali" },
+  { name: "Realizzazione di cordoli e zanelle stradali", src: "7.jpg", description: "Realizzazione di cordoli e zanelle stradali" },
+  { name: "Realizzazione di drenaggi", src: "8.jpg", description: "Realizzazione di drenaggi" },
+  { name: "Realizzazione di fognature", src: "9.jpg", description: "Realizzazione di fognature" },
+  { name: "Realizzazione di gabbionate", src: "10.jpg", description: "Realizzazione di gabbionate" },
 ]
 
 export default function Example() {
@@ -116,7 +116,7 @@ export default function Example() {
                 <li key={picture.source} className="relative">
                   <div className="aspect-[8/5] bg-gray-200 rounded-md overflow-hidden">
                         <img
-                          src={picture.src}
+                          src={"servizi_small/" + picture.src}
                           className="w-full h-full object-center object-cover"
                         />
                       </div>
@@ -137,7 +137,7 @@ export default function Example() {
                 <div key={picture.id} className="group relative">
                   <div className="aspect-[3/5] bg-gray-200 rounded-md overflow-hidden">
                     <img
-                      src={picture.src}
+                      src={"parco-mezzi_small/" + picture.src}
                       className="w-full h-full object-center object-cover"
                     />
                   </div>
@@ -158,7 +158,7 @@ export default function Example() {
                 <div key={picture.id} className="group relative">
                   <div className="aspect-[4/3] rounded-md overflow-hidden">
                     <img
-                      src={picture.src}
+                      src={"realizzazioni_small/" + picture.src}
                       className="w-full h-full object-center object-cover"
                     />
                   </div>
