@@ -114,7 +114,7 @@ export default function Example() {
             <ul role="list" className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6">
               {servizi.map((picture) => (
                 <li key={picture.source} className="relative">
-                  <div className="aspect-[8/5] bg-gray-200 rounded-md overflow-hidden">
+                  <div className="aspect-[4/3] bg-gray-200 rounded-md overflow-hidden">
                         <img
                           src={"servizi_small/" + picture.src}
                           className="w-full h-full object-center object-cover"
@@ -135,7 +135,7 @@ export default function Example() {
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4"> 
               {parco_mezzi_gallery.map((picture) => (
                 <div key={picture.id} className="group relative">
-                  <div className="aspect-[3/5] bg-gray-200 rounded-md overflow-hidden">
+                  <div className="aspect-[2/2] bg-gray-200 rounded-md overflow-hidden">
                     <img
                       src={"parco-mezzi_small/" + picture.src}
                       className="w-full h-full object-center object-cover"
