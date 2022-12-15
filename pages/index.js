@@ -44,9 +44,7 @@ const parco_mezzi_gallery = [
   { name: "PC 16 R Komatsu", src: "pc-16r-komatsu.jpg", description: "PC 16 R Komatsu" },
   { name: "Komatsu PC 50", src: "komatsu-pc50.jpg", description: "Komatsu PC 50" },
   { name: "Iveco Trakker con gru", src: "iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" },
-  { name: "Eurocomac 65", src: "2.jpg", description: "Eurocomac 65" },
-  { name: "Hitachi 17", src: "3.jpg", description: "Hitachi 17" },
-  { name: "Sequani Z 20 E", src: "7.jpg", description: "Sequani Z 20 E" }
+  { name: "Eurocomac 65", src: "2.jpg", description: "Eurocomac 65" }
 ]
 
 const servizi = [
