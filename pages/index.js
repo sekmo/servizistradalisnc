@@ -211,7 +211,7 @@ export default function Example() {
                   </div>
                 </div>
               </section>
-              <p class="text-xs text-gray-600 mt-16 text-center">Copyright Servizi Stradali SNC 2022</p>
+              <p class="text-xs text-gray-600 mt-16 text-center">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
             </div>
           </div>
         </main>
