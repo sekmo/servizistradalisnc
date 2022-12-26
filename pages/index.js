@@ -43,8 +43,7 @@ const parco_mezzi_gallery = [
   { name: "Claas Arion 440", src: "claas-arion-440.jpg", description: "Claas Arion 440" },
   { name: "PC 16 R Komatsu", src: "pc-16r-komatsu.jpg", description: "PC 16 R Komatsu" },
   { name: "Komatsu PC 50", src: "komatsu-pc50.jpg", description: "Komatsu PC 50" },
-  { name: "Iveco Trakker con gru", src: "iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" },
-  { name: "Eurocomac 65", src: "2.jpg", description: "Eurocomac 65" }
+  { name: "Iveco Trakker con gru", src: "iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" }
 ]
 
 const servizi = [
