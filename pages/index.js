@@ -185,22 +185,22 @@ export default function Example() {
                     <h1 className="block mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl mb-4 sm:text-left">
                       Contatti
                     </h1>
-                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-2 lg:col-span-2 mt-8 w-full max-w-xs mx-auto sm:mx-0">
-                      <div class="text-center sm:text-left">
+                    <div class="mt-8 mx-auto text-center sm:text-left">
+                      <div class="text-center sm:text-left inline-block mr-4">
                         <h3 class="text-lg leading-6 font-medium">Alessandro</h3>
                         <dl class="mt-1 text-base text-gray-400">
                           <div>
                             <dt class="sr-only">Telefono</dt>
-                            <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/alessandro.jpg" /></dd>
+                            <dd><img class="w-24 mx-auto sm:ml-0" src="contact/alessandro.jpg" /></dd>
                           </div>
                         </dl>
                       </div>
-                      <div class="text-center sm:text-left">
+                      <div class="text-center sm:text-left inline-block">
                         <h3 class="text-lg leading-6 font-medium">Valentina</h3>
                         <dl class="mt-1 text-base text-gray-400">
                           <div>
                             <dt class="sr-only">Telefono</dt>
-                            <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/valentina.jpg" /></dd>
+                            <dd><img class="w-24 mx-auto sm:ml-0" src="contact/valentina.jpg" /></dd>
                           </div>
                         </dl>
                       </div>
