@@ -165,53 +165,64 @@ export default function Example() {
             </div>
           </section>
 
-          <div className="bg-gray-800 text-white">
-            <div className="max-w-xl sm:max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:pb-10 lg:px-8">
-              <section className="divide-y-2 divide-gray-200" id="contatti">
-                <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-                  <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-                    Contatti
-                  </span>
+          <div id="footer" className="bg-gray-800 text-gray-200">
+            <div className="max-w-xl sm:max-w-7xl mx-auto pb-8 px-4 sm:px-6 lg:pb-10 lg:px-8">
+              <section id="contatti">
+                <div className="md:grid md:grid-cols-2 lg:gap-20 pt-8 sm:pt-16">
+                  <div id="certifications" className="sm:lg-0 mx-auto sm:m-0 text-center sm:text-left">
+                    <span className="block text-sm text-gray-400">Azienda certificata</span>
+                    <img src="soa5.png" alt="Certificazione SOA" className="block w-40 sm:w-52 mt-1 block mx-auto sm:m-0 sm:mt-1" />
+                    <p className="mt-4 text-gray-400 mx-auto sm:ml-0 max-w-xs sm:max-w-sm text-sm">Abbiamo conseguito la certificazione SOA categoria OG3 (classifica II) e categoria OG1 (classifica II).</p>
+                    {
+                      /* <ul className="inline-block list-disc mt-4 text-sm px-4">
+                        <li>Certificazione SOA cat. OG3 classifica II</li>
+                        <li>Certificazione SOA cat. OG1 classifica II</li>
+                      </ul> */
+                    }
+                  </div>
 
-
-                  {/* <h2 className="text-2xl font-extrabold text-white sm:text-3xl">Contatti</h2> */}
-                  <div className="mx-auto max-w-sm mt-12 grid xs:grid-cols-2 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
-                    <div className="text-center sm:text-left">
-                      <h3 className="text-lg leading-6 font-medium">Alessandro</h3>
-                      <dl className="mt-2 text-base text-gray-400">
-                        <div className="mt-1">
-                          <dt className="sr-only">Telefono</dt>
-                          <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/alessandro.jpg"/></dd>
-                        </div>
-                      </dl>
+                  <div id="contact" class="mt-16 md:-mt-2">
+                    <h1 className="block mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl mb-4 sm:text-left">
+                      Contatti
+                    </h1>
+                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-2 lg:col-span-2 mt-8 w-full max-w-xs mx-auto sm:mx-0">
+                      <div class="text-center sm:text-left">
+                        <h3 class="text-lg leading-6 font-medium">Alessandro</h3>
+                        <dl class="mt-1 text-base text-gray-400">
+                          <div>
+                            <dt class="sr-only">Telefono</dt>
+                            <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/alessandro.jpg" /></dd>
+                          </div>
+                        </dl>
+                      </div>
+                      <div class="text-center sm:text-left">
+                        <h3 class="text-lg leading-6 font-medium">Valentina</h3>
+                        <dl class="mt-1 text-base text-gray-400">
+                          <div>
+                            <dt class="sr-only">Telefono</dt>
+                            <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/valentina.jpg" /></dd>
+                          </div>
+                        </dl>
+                      </div>
                     </div>
-                    <div className="text-center sm:text-left">
-                      <h3 className="text-lg leading-6 font-medium">Valentina</h3>
-                      <dl className="mt-2 text-base text-gray-400">
-                        <div className="mt-1">
-                          <dt className="sr-only">Telefono</dt>
-                          <dd><img class="w-24 m0 mx-auto sm:ml-0" src="contact/valentina.jpg"/></dd>
-                        </div>
-                      </dl>
-                    </div>
-
-                    <div className="text-center sm:text-left">
-                      <h3 className="text-lg leading-6 font-medium">Email e PEC</h3>
-                      <dl className="mt-2 text-base text-gray-400">
+                    <div class="text-center sm:text-left mt-8">
+                      <h3 class="text-lg leading-6 font-medium">Email e PEC</h3>
+                      <dl class="text-base text-gray-400">
                         <div>
-                          <dt className="sr-only">Email</dt>
+                          <dt class="sr-only">Email</dt>
                           <dd>servizi.stradali@gmail.com</dd>
                         </div>
                         <div>
-                          <dt className="sr-only">PEC</dt>
+                          <dt class="sr-only">PEC</dt>
                           <dd>servizistradali@pec.buffetti.it</dd>
                         </div>
                       </dl>
                     </div>
                   </div>
+
                 </div>
               </section>
-              <p class="text-xs text-gray-600 mt-16 text-center">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
+              <p class="text-xs text-gray-600 mt-16 text-center sm:text-left">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
             </div>
           </div>
         </main>
