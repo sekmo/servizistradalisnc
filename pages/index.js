@@ -219,10 +219,9 @@ export default function Example() {
                       </ul> */
                     }
                   </div>
-
                 </div>
               </section>
-              <p class="text-xs text-gray-600 mt-16 text-center sm:text-left">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
+              <p class="mt-16 text-center sm:text-left md:text-center text-xs md:text-sm text-gray-600">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
             </div>
           </div>
         </main>
