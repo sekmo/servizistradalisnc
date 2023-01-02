@@ -166,11 +166,11 @@ export default function Example() {
           </section>
 
           <div id="footer" className="bg-gray-800 text-gray-200">
-            <div className="max-w-xl sm:max-w-7xl mx-auto pb-8 px-4 sm:px-6 lg:pb-10 lg:px-8">
-              <section id="contatti">
-                <div className="md:grid md:grid-cols-2 lg:gap-20 pt-8 sm:pt-16">
+            <div className="max-w-xl sm:max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
+              <section>
+                <div className="md:grid md:grid-cols-2 lg:gap-20 pt-8 md:pt-16">
                   <div id="contact" className="sm:lg-0 mx-auto sm:m-0 text-center sm:text-left">
-                    <h1 className="block mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl mb-4 sm:text-left">
+                    <h1 className="block mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl mb-4 sm:text-left text-gray-200">
                       Contatti
                     </h1>
                     <div class="mt-8 mx-auto text-center sm:text-left">
@@ -208,7 +208,7 @@ export default function Example() {
                     </div>
                   </div>
 
-                  <div id="certifications" class="mt-16 md:-mt-2">
+                  <div id="certifications" class="mt-16 md:mt-0">
                     <span className="block text-sm text-gray-400 text-center sm:text-left">Azienda certificata</span>
                     <img src="soa5.png" alt="Certificazione SOA" className="block w-40 sm:w-52 mt-1 block mx-auto sm:m-0 sm:mt-1" />
                     <p className="mt-4 text-gray-400 mx-auto sm:ml-0 max-w-xs sm:max-w-sm text-sm text-center sm:text-left">Abbiamo conseguito la certificazione SOA categoria OG3 (classifica II) e categoria OG1 (classifica II).</p>
@@ -221,7 +221,7 @@ export default function Example() {
                   </div>
                 </div>
               </section>
-              <p class="mt-16 text-center sm:text-left md:text-center text-xs md:text-sm text-gray-600">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
+              <p class="mt-16 text-center sm:text-left md:text-center text-xs md:text-sm font-medium text-gray-600">Copyright Servizi Stradali SNC {new Date().getFullYear()}</p>
             </div>
           </div>
         </main>
