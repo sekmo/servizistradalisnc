@@ -198,11 +198,11 @@ export default function Example() {
                       <dl class="text-base text-gray-400">
                         <div>
                           <dt class="sr-only">Email</dt>
-                          <dd>servizi.stradali@gmail.com</dd>
+                          <dd><a href="mailto:servizi.stradali@gmail.com">servizi.stradali@gmail.com</a></dd>
                         </div>
                         <div>
                           <dt class="sr-only">PEC</dt>
-                          <dd>servizistradali@pec.buffetti.it</dd>
+                          <dd><a href="mailto:servizistradali@pec.buffetti.it">servizistradali@pec.buffetti.it</a></dd>
                         </div>
                       </dl>
                     </div>
