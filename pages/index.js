@@ -1,4 +1,5 @@
 import Navigation from '../components/Navigation'
+import Gallery from '../components/Gallery'
 import Flickity from 'react-flickity-component'
 import 'flickity/dist/flickity.min.css';
 
@@ -55,7 +56,6 @@ const servizi = [
 ]
 
 const realizzazioni = [
-  { name: "Demolizioni", src: "demolizioni.jpg", description: "Demolizioni" },
   { name: "Manutenzioni stradali", src: "manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
   { name: "Pulizia alvei fluviali", src: "pulizia-alvei-fluviali.jpg", description: "Pulizia alvei fluviali" },
   { name: "Pulizia attraversamenti", src: "4.jpg", description: "Pulizia attraversamenti" },
@@ -65,6 +65,20 @@ const realizzazioni = [
   { name: "Realizzazione di drenaggi", src: "8.jpg", description: "Realizzazione di drenaggi" },
   { name: "Realizzazione di fognature", src: "9.jpg", description: "Realizzazione di fognature" },
   { name: "Realizzazione di gabbionate", src: "10.jpg", description: "Realizzazione di gabbionate" },
+]
+
+const demolizioni = [
+  { largeURL: "realizzazioni/demolizioni/1.jpg",  thumbnailURL: "realizzazioni/demolizioni/1.jpg", width: 1600, height: 1196, description: "Demolizione eseguita con bobcat Cat 323E"},
+  { largeURL: "realizzazioni/demolizioni/2.jpg",  thumbnailURL: "realizzazioni/demolizioni/2.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/3.jpg",  thumbnailURL: "realizzazioni/demolizioni/3.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/4.jpg",  thumbnailURL: "realizzazioni/demolizioni/4.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/5.jpg",  thumbnailURL: "realizzazioni/demolizioni/5.jpg", width: 1200, height: 1600, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/6.jpg",  thumbnailURL: "realizzazioni/demolizioni/6.jpg", width: 1200, height: 1600, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/7.jpg",  thumbnailURL: "realizzazioni/demolizioni/7.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/8.jpg",  thumbnailURL: "realizzazioni/demolizioni/8.jpg", width: 1200, height: 1600, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/9.jpg",  thumbnailURL: "realizzazioni/demolizioni/9.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
+  { largeURL: "realizzazioni/demolizioni/10.jpg", thumbnailURL: "realizzazioni/demolizioni/10.jpg", width: 1600, height: 1200, description: "Una bellissima demolizione"},
+  { largeURL: "realizzazioni/demolizioni/11.jpg", thumbnailURL: "realizzazioni/demolizioni/11.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Cat"}
 ]
 
 export default function Example() {
@@ -150,7 +164,16 @@ export default function Example() {
                 Realizzazioni
               </span>
             </h1>
+
+
             <div className="mt-10 grid gap-y-10 gap-x-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"> 
+              <div className="group relative">
+                <div className="aspect-[4/3] rounded-md overflow-hidden">
+                  <Gallery galleryID="demolizioni-gallery" images={demolizioni} title="Demolizioni"></Gallery>
+                </div>
+                <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none">Demolizioni</p>
+              </div>
+
               {realizzazioni.map((picture) => (
                 <div key={picture.id} className="group relative">
                   <div className="aspect-[4/3] rounded-md overflow-hidden">

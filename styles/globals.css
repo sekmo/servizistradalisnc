@@ -73,3 +73,29 @@ a {
   display: block;
   max-height: 100%;
 }
+
+
+/* custom caption for Photoswipe */
+
+.pswp__custom-caption {
+  background: rgba(0, 0, 0, 0.467);
+  font-size: 16px;
+  color: rgb(168, 168, 168);
+  width: calc(100% - 32px);
+  max-width: 400px;
+  padding: 4px 16px;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 1em;
+  transform: translateX(-50%);
+  text-align: center;
+  text-shadow: 1px 1px 3px #333;
+}
+.pswp__custom-caption a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+.hidden-caption-content {
+  display: none;
+}
