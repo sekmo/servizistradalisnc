@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation'
 import Gallery from '../components/Gallery'
 import Flickity from 'react-flickity-component'
 import 'flickity/dist/flickity.min.css';
+import realizzazioni_galleries from './api/realizzazioni_galleries'
 
 const flickityOptions = {
     initialIndex: 0,
@@ -55,33 +56,7 @@ const servizi = [
   { name: "Giardinaggio e recinzioni", src: "giardinaggio-e-recinzioni.jpg", description: "Giardinaggio e recinzioni" }
 ]
 
-const realizzazioni = [
-  { name: "Manutenzioni stradali", src: "manutenzioni-stradali.jpg", description: "Manutenzioni stradali" },
-  { name: "Pulizia alvei fluviali", src: "pulizia-alvei-fluviali.jpg", description: "Pulizia alvei fluviali" },
-  { name: "Pulizia attraversamenti", src: "4.jpg", description: "Pulizia attraversamenti" },
-  { name: "Pulizia sotto i ponti con cestello in negativo", src: "5.jpg", description: "Pulizia sotto i ponti con cestello in negativo" },
-  { name: "Realizzazioni di attraversamenti stradali", src: "realizzazioni-di-attraversamenti-stradali.jpg", description: "Realizzazioni di attraversamenti stradali" },
-  { name: "Realizzazione di cordoli e zanelle stradali", src: "7.jpg", description: "Realizzazione di cordoli e zanelle stradali" },
-  { name: "Realizzazione di drenaggi", src: "8.jpg", description: "Realizzazione di drenaggi" },
-  { name: "Realizzazione di fognature", src: "9.jpg", description: "Realizzazione di fognature" },
-  { name: "Realizzazione di gabbionate", src: "10.jpg", description: "Realizzazione di gabbionate" },
-]
-
-const demolizioni = [
-  { largeURL: "realizzazioni/demolizioni/1.jpg",  thumbnailURL: "realizzazioni/demolizioni/1.jpg", width: 1600, height: 1196, description: "Demolizione eseguita con bobcat Cat 323E"},
-  { largeURL: "realizzazioni/demolizioni/2.jpg",  thumbnailURL: "realizzazioni/demolizioni/2.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/3.jpg",  thumbnailURL: "realizzazioni/demolizioni/3.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/4.jpg",  thumbnailURL: "realizzazioni/demolizioni/4.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/5.jpg",  thumbnailURL: "realizzazioni/demolizioni/5.jpg", width: 1200, height: 1600, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/6.jpg",  thumbnailURL: "realizzazioni/demolizioni/6.jpg", width: 1200, height: 1600, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/7.jpg",  thumbnailURL: "realizzazioni/demolizioni/7.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/8.jpg",  thumbnailURL: "realizzazioni/demolizioni/8.jpg", width: 1200, height: 1600, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/9.jpg",  thumbnailURL: "realizzazioni/demolizioni/9.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Komatsu"},
-  { largeURL: "realizzazioni/demolizioni/10.jpg", thumbnailURL: "realizzazioni/demolizioni/10.jpg", width: 1600, height: 1200, description: "Una bellissima demolizione"},
-  { largeURL: "realizzazioni/demolizioni/11.jpg", thumbnailURL: "realizzazioni/demolizioni/11.jpg", width: 1600, height: 1200, description: "Demolizione eseguita con bobcat Cat"}
-]
-
-export default function Example() {
+export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation navigation_items={navigation_items}></Navigation>
@@ -167,24 +142,16 @@ export default function Example() {
 
 
             <div className="mt-10 grid gap-y-10 gap-x-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"> 
-              <div className="group relative">
-                <div className="aspect-[4/3] rounded-md overflow-hidden">
-                  <Gallery galleryID="demolizioni-gallery" images={demolizioni} title="Demolizioni"></Gallery>
-                </div>
-                <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none">Demolizioni</p>
-              </div>
-
-              {realizzazioni.map((picture) => (
-                <div key={picture.id} className="group relative">
+              {
+                realizzazioni_galleries.galleries.map((gallery) => (
+                <div className="group relative">
                   <div className="aspect-[4/3] rounded-md overflow-hidden">
-                    <img
-                      src={"realizzazioni_small/" + picture.src}
-                      className="w-full h-full object-center object-cover"
-                    />
+                    <Gallery galleryID="manutenzioni_stradali-gallery" images={gallery.filenames} title="{gallery.title}"></Gallery>
                   </div>
-                  <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none">{picture.name}</p>
+                  <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none lg:text-lg">{gallery.title}</p>
                 </div>
-              ))}
+                ))
+              }
             </div>
           </section>
 
