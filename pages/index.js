@@ -191,12 +191,6 @@ export default function Index() {
                     <span className="block text-sm text-gray-400 text-center sm:text-left">Azienda certificata</span>
                     <img src="soa5.png" alt="Certificazione SOA" className="block w-40 sm:w-52 mt-1 block mx-auto sm:m-0 sm:mt-1" />
                     <p className="mt-4 text-gray-400 mx-auto sm:ml-0 max-w-xs sm:max-w-sm text-sm text-center sm:text-left">Abbiamo conseguito la certificazione SOA categoria OG3 (classifica II) e categoria OG1 (classifica II).</p>
-                    {
-                      /* <ul className="inline-block list-disc mt-4 text-sm px-4">
-                        <li>Certificazione SOA cat. OG3 classifica II</li>
-                        <li>Certificazione SOA cat. OG1 classifica II</li>
-                      </ul> */
-                    }
                   </div>
                 </div>
               </section>
