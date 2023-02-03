@@ -95,7 +95,7 @@ export default function Index() {
                           className="w-full h-full object-center object-cover"
                         />
                       </div>
-                  <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none">{picture.name}</p>
+                  <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none lg:text-lg">{picture.name}</p>
                 </li>
               ))}
             </ul>
