@@ -20,7 +20,7 @@ export default function Gallery(props) {
   }, []);
 
   return (
-    <div className="pswp-gallery" id={props.galleryID}>
+    <div className="pswp-gallery w-full h-full object-center object-cover" id={props.galleryID}>
       {props.images.map((image, index) => (
         <a
           href={image.largeURL}
