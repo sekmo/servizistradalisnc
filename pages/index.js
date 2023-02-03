@@ -25,14 +25,14 @@ const parco_mezzi_gallery = [
   { name: "Autocarro 330", src: "autocarro-330.jpg", description: "Autocarro 330" },
   { name: "Cestello PLE PTJ265S", src: "cestello-ple-ptj265s.jpg", description: "Cestello PLE PTJ265S" },
   { name: "Terna Benati", src: "terna-benati.jpg", description: "Terna Benati" },
-  { name: "Bob Cat CK30 Komatsu", src: "bobcat-ck30-komatsu.jpg", description: "Bob Cat CK30 Komatsu" },
+  { name: "Bobcat CK30 Komatsu", src: "bobcat-ck30-komatsu.jpg", description: "Bob Cat CK30 Komatsu" },
   { name: "Autocarro con gru DAF 440", src: "autocarro-con-gru-daf-440.jpg", description: "Autocarro con gru DAF 440" },
+  { name: "CAT 308 E", src: "cat-308e.jpg", description: "CAT 308 E" },
   { name: "CAT 315F", src: "cat-315f.jpg", description: "CAT 315F" },
   { name: "CAT 323 E", src: "cat-323e.jpg", description: "CAT 323 E" },
-  { name: "CAT 308 E", src: "cat-308e.jpg", description: "CAT 308 E" },
-  { name: "Cursor Iveco 440", src: "cursor-iveco-440.jpg", description: "Cursor Iveco 440" },
+  { name: "Iveco Cursor 440", src: "cursor-iveco-440.jpg", description: "Iveco Cursor 440" },
   { name: "Claas Arion 440", src: "claas-arion-440.jpg", description: "Claas Arion 440" },
-  { name: "PC 16 R Komatsu", src: "pc-16r-komatsu.jpg", description: "PC 16 R Komatsu" },
+  { name: "Komatsu PC 16 R", src: "pc-16r-komatsu.jpg", description: "Komatsu PC 16 R" },
   { name: "Komatsu PC 50", src: "komatsu-pc50.jpg", description: "Komatsu PC 50" },
   { name: "Iveco Trakker con gru", src: "iveco-trakker-con-gru.jpg", description: "Iveco Trakker con gru" }
 ]
