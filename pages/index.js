@@ -156,7 +156,7 @@ export default function Index() {
             <div className="max-w-xl sm:max-w-7xl mx-auto pb-4 px-4 sm:px-6 lg:px-8">
               <section>
                 <div className="md:grid md:grid-cols-2 lg:gap-20 pt-8 md:pt-16">
-                  <div id="contact" className="sm:lg-0 mx-auto sm:m-0 text-center sm:text-left">
+                  <div id="contatti" className="sm:lg-0 mx-auto sm:m-0 text-center sm:text-left">
                     <h1 className="block mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl mb-4 sm:text-left text-gray-200">
                       Contatti
                     </h1>
