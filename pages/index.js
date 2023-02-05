@@ -1,8 +1,10 @@
 import Navigation from '../components/Navigation'
+import NavigationWrapper from '../components/NavigationWrapper'
 import Gallery from '../components/Gallery'
 import Flickity from 'react-flickity-component'
 import 'flickity/dist/flickity.min.css';
 import realizzazioni_galleries from './api/realizzazioni_galleries'
+import Script from 'next/script';
 
 const flickityOptions = {
     initialIndex: 0,
@@ -13,7 +15,7 @@ const flickityOptions = {
 }
 
 const navigation_items = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: '#', current: false },
   { name: 'Azienda', href: '#azienda', current: false },
   { name: 'Servizi', href: '#servizi', current: false },
   { name: 'Parco Mezzi', href: '#parco-mezzi', current: false },
@@ -48,7 +50,13 @@ const servizi = [
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation navigation_items={navigation_items}></Navigation>
+      <Script id="show-banner">
+        {`console.log(11111)`}
+      </Script>
+      <NavigationWrapper>
+        <Navigation navigation_items={navigation_items}></Navigation>
+      </NavigationWrapper>
+      
 
       <Flickity
         className={'carousel'} // default ''

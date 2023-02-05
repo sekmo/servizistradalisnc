@@ -7,13 +7,13 @@ function classNames(...classes) {
 
 export default function Navigation({navigation_items}) {
   return(
-    <Disclosure as="nav" className="bg-gradient-to-r from-neutral-600 bg-neutral-700 border-b border-lime-300 md:pt-2">
+    <Disclosure as="nav" className="bg-gradient-to-r from-neutral-600 bg-neutral-700 border-b border-lime-300 md:pt-2 w-full z-10">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto mt-0 px-4 sm:px-6 lg:px-8 flow-root">
             {/* Logo visible only on desktop */}
             <img
-              className="hidden sm:block h-12 sm:h-14 md:h-16 w-auto mb-3 mx-auto sm:mt-3"
+              className="hidden sm:block h-12 sm:h-14 md:h-14 w-auto mb-3 mx-auto sm:mt-3"
               src="/logo_con_scritta.svg"
               alt="Servizi Stradali SNC"
             />
@@ -45,14 +45,14 @@ export default function Navigation({navigation_items}) {
                   ))}
                 </div>
               </div>
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center sm:hidden ">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <Disclosure.Button className="bg-neutral-600 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-neutral-500 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="block h-6 w-6 text-neutral-400" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -60,16 +60,16 @@ export default function Navigation({navigation_items}) {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="pt-2 pb-3 space-y-1 bg-white">
+            <div className="bg-gradient-to-r from-slate-800 bg-slate-700">
               {navigation_items.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-indigo-50 border-indigo-500 text-indigo-700'
-                      : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800',
-                    'block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                      ? 'bg-yellow-400 text-yellow-800 border-transparent'
+                      : 'my-0 border-slate-700 text-slate-400 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800',
+                    'block pl-3 pr-4 py-3 border-b text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
