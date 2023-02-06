@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 export default function Navigation({navigation_items}) {
   return(
-    <Disclosure as="nav" className="bg-gradient-to-r from-neutral-600 bg-neutral-700 border-b border-lime-300 md:pt-2 w-full z-10">
+    <Disclosure as="nav" className="bg-gradient-to-r from-neutral-700 bg-neutral-600 border-b border-lime-300 md:pt-2 w-full z-10">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto mt-0 px-4 sm:px-6 lg:px-8 flow-root">
@@ -47,12 +47,12 @@ export default function Navigation({navigation_items}) {
               </div>
               <div className="-mr-2 flex items-center sm:hidden ">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="bg-neutral-600 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-neutral-500 focus:outline-none">
+                <Disclosure.Button className="bg-neutral-500/40 inline-flex items-center justify-center p-2 rounded-md text-zinc-400 hover:bg-neutral-500/60 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6 text-neutral-400" aria-hidden="true" />
+                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
