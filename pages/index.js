@@ -141,9 +141,9 @@ export default function Index() {
             <div className="mt-10 grid gap-y-10 gap-x-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"> 
               {
                 realizzazioni_galleries.galleries.map((gallery) => (
-                <div className="group relative">
+                <div className="group relative" key={`realizzazioni_gallery_${gallery.title}`}>
                   <div className="aspect-[4/3] rounded-md overflow-hidden">
-                    <Gallery galleryID="manutenzioni_stradali-gallery" images={gallery.filenames} title="{gallery.title}"></Gallery>
+                    <Gallery key={gallery.title} galleryID="manutenzioni_stradali-gallery" images={gallery.filenames} title={gallery.title}></Gallery>
                   </div>
                   <p className="mt-2 block text-base font-medium text-gray-900 pointer-events-none lg:text-lg">{gallery.title}</p>
                 </div>
