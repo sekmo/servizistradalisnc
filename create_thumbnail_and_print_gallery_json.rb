@@ -10,10 +10,16 @@ MAX_THUMBNAIL_SIZE = 600
 
 raise ArgumentError.new("You need to pass the images directory") if !ARGV[0]
 
+FILENAMES_TO_EXCLUDE = [".", "..", ".psd", ".DS_Store", "small"]
+EXTENTIONS_TO_EXCLUDE = [".psd"]
+
 def create_thumbnail(folder_name)
   path = "public/#{folder_name}"
   path_for_small = "#{path}/#{"small"}"
-  filenames = Dir.entries(path).reject {|s| [".", "..", ".DS_Store", "small"].include?(s)}
+  FileUtils.rm_rf path_for_small
+  FileUtils.mkdir_p path_for_small
+  # include here is used first to filter an array, then as a simple substring matcher
+  filenames = Dir.entries(path).reject {|s| FILENAMES_TO_EXCLUDE.include?(s) || EXTENTIONS_TO_EXCLUDE.any? {|ext| s.include?(ext) }}
   
   filenames.sort.each do |filename|
     vertical = false
@@ -27,7 +33,6 @@ def create_thumbnail(folder_name)
     end
 
     vertical ? image.resize!(:auto, MAX_THUMBNAIL_SIZE) : image.resize!(MAX_THUMBNAIL_SIZE, :auto)
-    FileUtils.mkdir_p path_for_small
     image.save("#{path_for_small}/#{filename}")
   end
 end
@@ -35,7 +40,8 @@ end
 def generate_gallery_items(folder_name)
   path = "public/#{folder_name}"
   path_for_url = "#{folder_name}"
-  filenames = Dir.entries(path).reject {|s| [".", "..", ".DS_Store", "small"].include?(s)}
+  # include here is used first to filter an array, then as a simple substring matcher
+  filenames = Dir.entries(path).reject {|s| FILENAMES_TO_EXCLUDE.include?(s) || EXTENTIONS_TO_EXCLUDE.any? {|ext| s.include?(ext) }}
   
   gallery_items = []
   filenames.sort.each do |filename|
