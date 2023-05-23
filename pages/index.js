@@ -26,7 +26,6 @@ const navigation_items = [
 const parco_mezzi_gallery = [
   { name: "Autocarro 330", src: "autocarro-330.jpg", description: "Autocarro 330" },
   { name: "Cestello PLE PTJ265S", src: "cestello-ple-ptj265s.jpg", description: "Cestello PLE PTJ265S" },
-  { name: "Terna Benati", src: "terna-benati.jpg", description: "Terna Benati" },
   { name: "Bobcat CK30 Komatsu", src: "bobcat-ck30-komatsu.jpg", description: "Bob Cat CK30 Komatsu" },
   { name: "Autocarro con gru DAF 440", src: "autocarro-con-gru-daf-440.jpg", description: "Autocarro con gru DAF 440" },
   { name: "CAT 308 E", src: "cat-308e.jpg", description: "CAT 308 E" },
@@ -44,7 +43,7 @@ const servizi = [
   { name: "Movimento terra", src: "movimento-terra.jpg", description: "Movimento terra" },
   { name: "Sistemazione verde pubblico", src: "sistemazione-verde-pubblico.jpg", description: "Sistemazione verde pubblico" },
   { name: "Lavori edili e stradali c/o terzi", src: "lavori-edili-e-stradali.jpg", description: "Lavori edili e stradali c/o terzi" },
-  { name: "Giardinaggio e recinzioni", src: "giardinaggio-e-recinzioni.jpg", description: "Giardinaggio e recinzioni" }
+  { name: "Giardinaggio e staccionate", src: "giardinaggio-e-recinzioni.jpg", description: "Giardinaggio e staccionate" }
 ]
 
 export default function Index() {
