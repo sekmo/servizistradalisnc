@@ -13,18 +13,18 @@ export default function Navigation({navigation_items}) {
           <div className="max-w-7xl mx-auto mt-0 px-4 sm:px-6 lg:px-8 flow-root">
             {/* Logo visible only on desktop */}
             <img
-              className="hidden sm:block h-12 sm:h-14 md:h-14 w-auto mb-3 mx-auto sm:mt-3"
-              src="/logo_con_scritta.svg"
-              alt="Servizi Stradali SNC"
+              className="hidden sm:block h-12 sm:h-14 md:h-14 w-auto mx-auto sm:mt-3"
+              src="/logo_new.png"
+              alt="Servizi Stradali Marinelli SRL"
             />
 
             <div className="flex justify-between h-16 lg:mt-5">
               <div className="flex mx-auto">
                 <div className="flex-shrink-0 flex items-center sm:hidden">
                   <img
-                    className="block h-8 sm:h-9 w-auto mb-3"
-                    src="/logo_con_scritta.svg"
-                    alt="Servizi Stradali SNC"
+                    className="block h-8 sm:h-9 w-auto"
+                    src="/logo_new.png"
+                    alt="Servizi Stradali Marinelli SRL"
                   />
                 </div>
                 <div className="hidden sm:-my-px sm:flex sm:space-x-8">
