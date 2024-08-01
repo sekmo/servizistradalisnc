@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Navigation from '../components/Navigation'
 import NavigationWrapper from '../components/NavigationWrapper'
 import Gallery from '../components/Gallery'
@@ -49,6 +50,10 @@ const servizi = [
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
+      <Head>
+        <title>Servizi Stradali Marinelli SRL</title>
+        <meta name="description" content="L'Azienda Servizi Stradali Marinelli SRL è una Società a responsabilità limitata rappresentata dal Legale Rappresentante Marinelli Valentina e dal Direttore Tecnico Di Luca Alessandro. L'attività dell'Impresa è costituita da lavori di movimento terra c/terzi, scavi, sbancamenti, lavori stradali, lavori edili stradali, manutenzione del verde pubblico (taglio erba e potature), attività di sgombro neve e spargimento abrasivi, lavori di manutenzione strade e manutenzioni edili-stradali, attività edilizia privata e pubblica sia di costruzione che di restauro, costruzioni e pavimentazioni stradali, acquedotti, fognature, trivellazione e palificazione, impianti di irrigazione, drenaggi, lavorazioni in alta quota con o senza piattaforma, noleggio a freddo, trasporto e smaltimento rifiuti, bonifica canali, sistemazione ponti, installazione di barriere, demolizione edifici di ogni genere." />
+      </Head>
       <Script id="show-banner">
         {`console.log(11111)`}
       </Script>
@@ -80,10 +85,20 @@ export default function Index() {
               <h1 className="block text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
                 Chi siamo
               </h1>
-              <p className="mt-8 text-xl leading-8">L'Azienda <strong>Servizi Stradali Marinelli SRL</strong> è una Società in nome collettivo rappresentata dal Legale Rappresentante / Socia <strong>Marinelli Valentina</strong> e dal Socio / Direttore Tecnico <strong>Di Luca Alessandro</strong>.<br/>La Società ha sede legale in San Ginesio in Via Torre di Morro snc, è stata costituita il 10/01/2008 ed è iscritta presso la Camera di Commercio di Macerata dal 16/01/2008 al R.I. n. 01646020436 e Rea n. MC-169590.</p>
-              <p className="mt-8 text-xl leading-8">L'attività dell'Impresa è costituita da lavori di movimento terra c/terzi, scavi, sbancamenti, lavori stradali, lavori edili stradali, manutenzione del verde pubblico (taglio erba e potature), attività di sgombro neve e spargimento abrasivi, lavori di manutenzione strade e manutenzioni edili-stradali, attività edilizia privata e pubblica sia di costruzione che di restauro, costruzioni e pavimentazioni stradali, acquedotti, fognature, trivellazione e palificazione, impianti di irrigazione, drenaggi, lavorazioni in alta quota con o senza piattaforma, noleggio a freddo, trasporto e smaltimento rifiuti, bonifica canali, sistemazione ponti, installazione di barriere, demolizione edifici di ogni genere.</p>
-              <p className="mt-8 text-xl leading-8">La Servizi Stradali Marinelli SRL ad oggi vanta di svolgere con esperienza ormai decennale lavori appartenenti alle <strong>Categorie OG1 e OG3</strong> che hanno permesso di acquisire le <strong>Certificazioni SOA con classifica II</strong> per entrambe le categorie.</p>
-              <p className="mt-8 text-xl leading-8">L'Impresa ha svolto e svolge tutt'ora lavori e servizi appartenenti alla <strong>Categoria OS24</strong>, e LAVORI appartenenti alle <strong>Categorie OS1 e OS23.</strong>. Tutte queste tipologie di lavorazioni sono state e sono tutt'oggi commissionate da Enti Pubblici, privati e aziende private. Dal 2021 l'azienda ha iniziato a svolgere <strong>lavori sisma e lavori con sismabonus 110% ed ecobonus</strong> sia direttamente come ditta Appaltatrice sia come ditta subappaltatrice.</p>
+              <p className="mt-8 text-xl leading-8">
+                L'Azienda <strong>Servizi Stradali Marinelli SRL</strong> è una Società a responsabilità limitata rappresentata dal Legale Rappresentante
+                <strong>Marinelli Valentina</strong> e dal Direttore Tecnico <strong>Di Luca Alessandro</strong>.<br/>
+                La Società ha sede legale in San Ginesio in Via Torre di Morro snc, è stata costituita il 10/01/2008 ed è iscritta presso la Camera di Commercio di Macerata dal 16/01/2008 al R.I. n. 01646020436 e Rea n. MC-169590.
+              </p>
+              <p className="mt-8 text-xl leading-8">
+                L'attività dell'Impresa è costituita da lavori di movimento terra c/terzi, scavi, sbancamenti, lavori stradali, lavori edili stradali, manutenzione del verde pubblico (taglio erba e potature), attività di sgombro neve e spargimento abrasivi, lavori di manutenzione strade e manutenzioni edili-stradali, attività edilizia privata e pubblica sia di costruzione che di restauro, costruzioni e pavimentazioni stradali, acquedotti, fognature, trivellazione e palificazione, impianti di irrigazione, drenaggi, lavorazioni in alta quota con o senza piattaforma, noleggio a freddo, trasporto e smaltimento rifiuti, bonifica canali, sistemazione ponti, installazione di barriere, demolizione edifici di ogni genere.
+              </p>
+              <p className="mt-8 text-xl leading-8">
+                La Servizi Stradali Marinelli SRL ad oggi vanta di svolgere con esperienza ormai decennale lavori appartenenti alle <strong>Categorie OG1 e OG3</strong> che hanno permesso di acquisire le <strong>Certificazioni SOA</strong> rispettivamente con <strong>classifica III e III-BIS</strong>. Inoltre a Giugno 2024 ha anche acquisito la <strong>Certificazione UNI EN ISO 9001:2015</strong>.
+              </p>
+              <p className="mt-8 text-xl leading-8">
+                L'Impresa ha svolto e svolge tutt'ora lavori e servizi appartenenti alla <strong>Categoria OS24</strong>, e LAVORI appartenenti alle <strong>Categorie OS1 e OS23.</strong>. Tutte queste tipologie di lavorazioni sono state e sono tutt'oggi commissionate da Enti Pubblici, privati e aziende private. Dal 2021 l'azienda ha iniziato a svolgere <strong>lavori sisma e lavori con sismabonus 110% ed ecobonus</strong> sia direttamente come ditta Appaltatrice sia come ditta subappaltatrice.
+              </p>
             </div>
           </section>
 
@@ -197,7 +212,7 @@ export default function Index() {
                   <div id="certifications" class="mt-16 md:mt-0">
                     <span className="block text-sm text-gray-400 text-center sm:text-left">Azienda certificata</span>
                     <img src="soa5.png" alt="Certificazione SOA" className="block w-40 sm:w-52 mt-1 block mx-auto sm:m-0 sm:mt-1" />
-                    <p className="mt-4 text-gray-400 mx-auto sm:ml-0 max-w-xs sm:max-w-sm text-sm text-center sm:text-left">Abbiamo conseguito la certificazione SOA categoria OG3 (classifica II) e categoria OG1 (classifica II).</p>
+                    <p className="mt-4 text-gray-400 mx-auto sm:ml-0 max-w-xs sm:max-w-sm text-sm text-center sm:text-left">Abbiamo conseguito la certificazione SOA categoria OG3 (classifica III-BIS) e categoria OG1 (classifica III).</p>
                   </div>
                 </div>
               </section>
